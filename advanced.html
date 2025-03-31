@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Advanced HTML5 Elements</h1>
+    
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Ordered List</h2>
+    <ol type="I">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+    
+    <!-- External Image -->
+    <h2>External Image</h2>
+    <img src="https://media.istockphoto.com/id/1472634899/photo/a-mixed-race-senior-woman-holding-her-puppy-outdoors.webp?a=1&b=1&s=612x612&w=0&k=20&c=Cbblqig5xnh7E6vHMNGx_I2FGa9WO3tcSte_TNDNuNc=" alt="Sample Image from Pexels" width="500">
+    
+    <!-- Contact Table -->
+    <h2>Contact List</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Idah Makena</td>
+            <td>123 Street, Nairobi</td>
+            <td>+254712345678</td>
+            <td>john@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Jane Kanja</td>
+            <td>456 Avenue, Nyeri</td>
+            <td>+254734123456</td>
+            <td>jane@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Ahmed Ali</td>
+            <td>789 Road, Cairo</td>
+            <td>+201123456789</td>
+            <td>ahmed@gmail.com.com</td>
+        </tr>
+        <tr>
+            <td>Amina Yusuf</td>
+            <td>101 Lane, Accra</td>
+            <td>+233509876543</td>
+            <td>amina@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Moses Otieno</td>
+            <td>567 Boulevard, Kampala</td>
+            <td>+256704567890</td>
+            <td>moses@gmail.com</td>
+        </tr>
+    </table>
+    
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6"><br><br>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+        
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label><br><br>
+        
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select Country</option>
+            <option value="kenya">Kenya</option>
+            <option value="nigeria">Nigeria</option>
+            <option value="egypt">Egypt</option>
+            <option value="ghana">Ghana</option>
+            <option value="uganda">Uganda</option>
+        </select><br><br>
+        
+        <label>Interests:</label><br>
+        <input type="checkbox" id="coding" name="interests" value="coding">
+        <label for="coding">Coding</label>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label><br><br>
+        
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
